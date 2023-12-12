@@ -33,6 +33,9 @@ h3, p, a{
 .rojo{
     color:var(--rojo);
 }
+.ocultar{
+    display: none;
+}
 
 
 
@@ -49,8 +52,40 @@ h3, p, a{
 .logo h2, .navegacion a{
     color:var(--blanco);
 }
+.logo h2{
+    font-size: 3rem;
+}
 .navegacion a{
     text-decoration: none;
     font-size: 2rem;
-    padding: 1rem;
+    padding: 1.5rem;
+    display: block;
+    transition: color .3s ease-in-out;
+}
+.navegacion a:nth-child(even):hover{
+    color:var(--rojo);
+
+}
+.navegacion a:nth-child(odd):hover{
+    color:var(--verde);
+}
+
+.navegacion a:first-of-type{
+    margin-top: 5rem;
+}
+.navegacion{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--oscuro);
+    bottom: 0;
+    width: 40rem;
+    padding: 3rem 4rem;
+}
+.hamburguesa span{
+    background-color: var(--blanco);
+    display: block;
+    width: 5rem;
+    height: .4rem;
+    margin-bottom: .5rem;
 }
